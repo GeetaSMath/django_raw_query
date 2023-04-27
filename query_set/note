@@ -1,0 +1,22 @@
+
+to add data in table
+python manage.py shell---command for shell
+from operation.models import operations
+google=Compnay(name='Google')
+apple=Company(name='apple')
+facebook=Company(name='facebook')
+google.save()
+apple.save()
+facebook.save()
+
+#to change attribute of the database
+google.name='microsoft'
+google.save()
+#to delete attribute
+facebook.delete()
+
+#to access data
+from operations.models import Company
+apple=Compnay.objects.get(pk)
+
+#from operations.models import Programmer,Company
