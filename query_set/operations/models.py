@@ -15,7 +15,7 @@ class Programmer(models.Model):
     def __str__(self):
         return self.name
 
-
+#user models
 class User(models.Model):
     username = models.CharField(max_length=50, unique=True)
     password = models.CharField(max_length=15)
